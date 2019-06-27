@@ -11,6 +11,10 @@
 
 import Foundation
 import CoreGraphics
+import QuartzCore
+#if canImport(AppKit)
+import AppKit
+#endif
 
 open class AnimatedViewPortJob: ViewPortJob
 {

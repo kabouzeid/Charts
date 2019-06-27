@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Charts",
+    platforms: [.iOS(.v10), .macOS(.v10_11)],
     products: [
         .library(name: "Charts", targets: ["Charts"])
     ],

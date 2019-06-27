@@ -11,6 +11,12 @@
 
 import Foundation
 import CoreGraphics
+#if canImport(UIKit)
+import UIKit
+#endif
+#if canImport(AppKit)
+import AppKit
+#endif
 
 open class HorizontalBarChartRenderer: BarChartRenderer
 {
@@ -319,7 +325,7 @@ open class HorizontalBarChartRenderer: BarChartRenderer
                 let barData = dataProvider.barData
                 else { return }
             
-            var dataSets = barData.dataSets
+            let dataSets = barData.dataSets
             
             let textAlign = NSTextAlignment.left
             
